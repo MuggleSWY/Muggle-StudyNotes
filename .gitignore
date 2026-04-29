@@ -1,0 +1,17 @@
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.log
+
+# Obsidian缓存
+.obsidian/workspace.json
+.obsidian/cache
+
+# 插件缓存
+.obsidian/plugins/*/data.json
+
+# node
+node_modules/

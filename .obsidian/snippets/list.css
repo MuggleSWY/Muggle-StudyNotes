@@ -1,0 +1,46 @@
+/* =====================================================
+   Obsidian 有序列表优化（高级舒服版）
+   目标：
+   1. 数字更清晰但不刺眼
+   2. 粗细自然，不生硬
+   3. 和 Minimal 主题更搭
+===================================================== */
+
+/* ===============================
+   阅读模式：有序列表数字
+================================= */
+.markdown-rendered ol > li::marker {
+    color: #7aa2f7 !important;   /* 柔和高级蓝 */
+    font-weight: 700 !important; /* 中等偏粗，舒服 */
+    font-size: 1.06em;
+    letter-spacing: 0.3px;
+}
+
+/* ===============================
+   编辑模式：有序列表数字
+================================= */
+.markdown-source-view.mod-cm6 .cm-formatting-list-ol {
+    color: #7aa2f7 !important;
+    font-weight: 700 !important;
+    opacity: 1 !important;
+}
+
+/* ===============================
+   数字与文字距离更舒服
+================================= */
+.markdown-rendered ol {
+    padding-left: 2em !important;
+}
+
+.markdown-rendered ol > li {
+    padding-left: 0.18em;
+    margin: 0.35em 0;
+    line-height: 1.75;
+}
+
+/* ===============================
+   悬停时微增强（可选）
+================================= */
+.markdown-rendered ol > li:hover::marker {
+    color: #89b4fa !important;
+}

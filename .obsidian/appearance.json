@@ -1,0 +1,12 @@
+{
+  "baseFontSizeAction": true,
+  "cssTheme": "Minimal",
+  "baseFontSize": 18,
+  "theme": "system",
+  "enabledCssSnippets": [
+    "highlight",
+    "minimal-highlight",
+    "list",
+    "table"
+  ]
+}

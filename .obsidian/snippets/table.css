@@ -1,0 +1,47 @@
+/* =====================================================
+   Obsidian 表格优化（笔记中间居中放置）
+   目标：
+   1. 表格整体放在页面中间
+   2. 分隔线清晰但低调
+   3. 保持 Minimal 风格
+===================================================== */
+
+/* ===============================
+   表格整体居中（重点）
+================================= */
+.markdown-rendered table {
+    display: table;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-collapse: collapse;
+    width: auto;              /* 按内容宽度 */
+    max-width: 100%;
+}
+
+/* ===============================
+   分隔线自然清晰
+================================= */
+.markdown-rendered th,
+.markdown-rendered td {
+    border: 1px solid rgba(255,255,255,0.14) !important;
+    padding: 8px 14px;
+}
+
+/* ===============================
+   表头稍明显
+================================= */
+.markdown-rendered th {
+    font-weight: 700;
+    border-bottom: 1px solid rgba(255,255,255,0.22) !important;
+}
+
+/* ===============================
+   文本居左（阅读舒服）
+================================= */
+.markdown-rendered th,
+.markdown-rendered td {
+    text-align: left;
+    vertical-align: middle;
+}

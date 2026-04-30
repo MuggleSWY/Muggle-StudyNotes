@@ -30,7 +30,7 @@ public class User implements Serializable {
 
 ### 2、Serializable接口的真相
 
-这接口是个空接口，一行代码都没有，纯粹是个标记。JDK序列化源码里有这么一段逻辑：**除了String、数组和枚举这几个特殊类型，其他对象要序列化必须实现Serializable，否则直接抛NotSerializableException**
+这接口是个空接口，一行代码都没有，纯粹是个标记。JDK序列化源码里有这么一段逻辑：==除了String、数组和枚举这几个特殊类型，其他对象要序列化必须实现Serializable，否则直接抛NotSerializableException==
 
 ![[Pasted image 20260428211547.png]]
 
@@ -40,7 +40,7 @@ public class User implements Serializable {
 private static final long serialVersionUID = 1L;
 ```
 
-这行代码几乎每个实现Serializable的类都有。它的作用是在反序列化时校验类版本：**序列化时把这个ID写进字节流，反序列化时比对当前类的ID，不一致就抛InvaliClassException**
+这行代码几乎每个实现Serializable的类都有。它的作用是在反序列化时校验类版本：==序列化时把这个ID写进字节流，反序列化时比对当前类的ID，不一致就抛InvaliClassException==
 
 所以最佳实践是：==显示定义serialVersionUID==，改变类结构时想清楚要不要兼容旧数据，要兼容就别改这个值
 

@@ -1,0 +1,11 @@
+{
+  "foldIndent": false,
+  "showLineNumber": true,
+  "readableLineLength": false,
+  "showInlineTitle": true,
+  "promptDelete": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "00-inbox",
+  "attachmentFolderPath": "99-attachment",
+  "alwaysUpdateLinks": true
+}

@@ -1,8 +1,16 @@
 {
   "cssTheme": "Minimal",
-  "accentColor": "",
+  "accentColor": "#e7f3f2",
   "theme": "system",
   "baseFontSizeAction": true,
-  "textFontFamily": "Microsoft YaHei UI",
-  "monospaceFontFamily": "Cascadia Code"
+  "interfaceFontFamily": "Microsoft YaHei UI",
+  "textFontFamily": "Noto Sans SC",
+  "monospaceFontFamily": "JetBrains Mono",
+  "enabledCssSnippets": [
+    "heading-content-gap",
+    "note-reading-style",
+    "java-annotation-highlight"
+  ],
+  "baseFontSize": 18,
+  "nativeMenus": false
 }

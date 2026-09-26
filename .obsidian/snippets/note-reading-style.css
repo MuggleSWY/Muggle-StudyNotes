@@ -1,0 +1,225 @@
+/*
+ * 中性炭灰阅读背景与清晰的文字层次。
+ * 正文略亮、侧栏略暗；保留 Flexoki 的彩色标题与语法配色。
+ */
+body.theme-dark.minimal-flexoki-dark {
+  --base-h: 216;
+  --base-s: 5%;
+  --base-l: 18%;
+  --bg1: #2b2d30;
+  --bg2: #232528;
+  --bg3: rgba(216, 218, 221, 0.08);
+  --ui1: #3a3d42;
+  --ui2: #494d53;
+  --ui3: #595e66;
+  --tx1: #d8dadd;
+  --tx2: #adb2ba;
+  --tx3: #858b94;
+
+  /* 覆盖 Low contrast 的同色背景，让已启用的片段直接呈现侧栏层次。 */
+  --background-secondary: var(--bg2);
+  --ribbon-background: var(--bg2);
+}
+
+/*
+ * 暗色模式下保持图片亮度稳定，避免悬停时产生明暗跳变。
+ */
+body.theme-dark {
+  --image-muted: 0.85;
+}
+
+.theme-dark .markdown-source-view img,
+.theme-dark .markdown-preview-view img,
+.theme-dark .markdown-source-view img:hover,
+.theme-dark .markdown-preview-view img:hover {
+  opacity: var(--image-muted);
+  transition: none;
+}
+
+/*
+ * 列表标识、引用块、行内代码与内容排版共用变量。
+ */
+body {
+  --note-list-marker-color: color-mix(
+    in srgb,
+    var(--text-accent) 70%,
+    var(--text-muted)
+  );
+  --note-inline-code-color: color-mix(
+    in srgb,
+    var(--color-cyan) 82%,
+    var(--text-normal)
+  );
+  --note-code-text-size: calc(var(--font-adaptive-normal) * 0.85);
+  --note-secondary-text-size: calc(var(--font-adaptive-normal) * 0.94);
+  --note-blockquote-accent-color: var(--color-orange);
+  --list-marker-color: var(--note-list-marker-color);
+  --list-marker-color-hover: var(--text-accent-hover);
+  --blockquote-color: var(--text-normal);
+  --blockquote-border-color: var(--note-blockquote-accent-color);
+  --blockquote-border-thickness: 4px;
+  --font-code: var(--note-code-text-size);
+  --code-size: var(--note-code-text-size);
+  --table-text-size: var(--note-secondary-text-size);
+  --bases-table-font-size: var(--note-secondary-text-size);
+}
+
+/*
+ * 适度增强加粗与高亮，保持 Minimal 的克制感。
+ */
+.theme-light {
+  --note-highlight-background: rgba(255, 196, 0, 0.42);
+}
+
+.theme-dark {
+  --note-highlight-background: rgba(213, 159, 17, 0.48);
+}
+
+.markdown-reading-view .markdown-rendered strong,
+.markdown-source-view.mod-cm6 .cm-strong:not(.cm-formatting) {
+  font-weight: 700;
+}
+
+/* 引用块中的加粗标签与左侧强调线使用同一颜色。 */
+.markdown-reading-view .markdown-rendered blockquote strong,
+.markdown-source-view.mod-cm6
+  .HyperMD-quote
+  .cm-strong:not(.cm-formatting) {
+  color: var(--note-blockquote-accent-color);
+}
+
+.markdown-reading-view .markdown-rendered mark,
+.markdown-source-view.mod-cm6 .cm-highlight:not(.cm-formatting) {
+  background-color: var(--note-highlight-background);
+}
+
+.markdown-reading-view .markdown-rendered ul > li::marker {
+  color: var(--note-list-marker-color);
+  font-size: 1.12em;
+}
+
+.markdown-reading-view .markdown-rendered ol > li::marker,
+.markdown-source-view.mod-cm6 .cm-formatting-list-ol {
+  color: var(--note-list-marker-color);
+  font-weight: 700;
+  opacity: 1;
+}
+
+.markdown-source-view.mod-cm6 .cm-formatting-list-ul {
+  color: var(--note-list-marker-color);
+  opacity: 1;
+}
+
+.markdown-source-view.mod-cm6 .list-bullet::after {
+  width: 6px;
+  height: 6px;
+  background-color: var(--note-list-marker-color);
+  opacity: 1;
+}
+
+/*
+ * 增强行内代码（例如 Java annotation）的层级，且不影响代码块。
+ */
+.markdown-reading-view .markdown-rendered :not(pre) > code,
+.markdown-source-view.mod-cm6
+  .cm-line:not(.HyperMD-codeblock)
+  .cm-inline-code:not(.cm-formatting) {
+  font-family: var(--font-monospace);
+  font-size: var(--note-code-text-size);
+  color: var(--note-inline-code-color);
+  background-color: transparent;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*
+ * 编辑行内代码时弱化反引号等 Markdown 定界符。
+ */
+.markdown-source-view.mod-cm6
+  .cm-line:not(.HyperMD-codeblock)
+  .cm-formatting-code.cm-inline-code {
+  font-family: var(--font-monospace);
+  font-size: var(--note-code-text-size);
+  color: var(--text-faint);
+  background-color: transparent;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*
+ * 表格普通文字沿用正文字体，并略微收小字号。
+ */
+.markdown-reading-view .markdown-rendered table,
+.markdown-source-view.mod-cm6 .cm-table-widget table,
+.markdown-source-view.mod-cm6 .HyperMD-table-row {
+  font-family: var(--font-text);
+  font-size: var(--note-secondary-text-size);
+}
+
+/*
+ * 普通 Markdown 表格：暖色表头、完整细边框与轻微隔行底色。
+ * 复用表格变量，让 Live Preview 的编辑单元格保持相同留白。
+ * 表格整体与单元格内容统一居中，排除 Dataview 与日历表格。
+ */
+:is(.markdown-reading-view .markdown-rendered, .markdown-source-view.mod-cm6 .cm-table-widget)
+  table:not(.dataview):not(.calendar) {
+  --table-margin: auto;
+  --table-border-color: color-mix(in srgb, var(--text-normal) 25%, var(--background-primary));
+  --table-border-width: 1px;
+  --table-header-border-color: var(--table-border-color);
+  --table-header-border-width: 1px;
+  --table-column-first-border-width: 1px;
+  --table-column-last-border-width: 1px;
+  --table-row-last-border-width: 1px;
+  --table-cell-padding: 10px 14px;
+  --table-edge-cell-padding-first: 14px;
+  --table-edge-cell-padding-last: 14px;
+  --table-header-background: color-mix(in srgb, var(--color-orange) 12%, var(--background-primary));
+  --table-header-background-hover: var(--table-header-background);
+  --table-header-color: var(--text-normal);
+  --table-header-weight: 700;
+  --table-row-alt-background: color-mix(in srgb, var(--text-normal) 4%, var(--background-primary));
+  --table-row-background-hover: color-mix(in srgb, var(--text-normal) 7%, var(--background-primary));
+  --table-row-alt-background-hover: var(--table-row-background-hover);
+  border: var(--table-border-width) solid var(--table-border-color);
+  margin-inline: auto;
+  line-height: 1.65;
+}
+
+/* Minimal 的 Live Preview 使用贴合表格宽度的容器，需一起居中。 */
+:is(.markdown-reading-view .markdown-rendered, .markdown-source-view.mod-cm6 .cm-table-widget)
+  .table-wrapper:has(> table:not(.dataview):not(.calendar)) {
+  margin-inline: auto;
+}
+
+:is(.markdown-reading-view .markdown-rendered, .markdown-source-view.mod-cm6 .cm-table-widget)
+  table:not(.dataview):not(.calendar) > thead > tr > th {
+  border-bottom: 2px solid color-mix(in srgb, var(--color-orange) 65%, var(--background-primary));
+}
+
+:is(.markdown-reading-view .markdown-rendered, .markdown-source-view.mod-cm6 .cm-table-widget)
+  table:not(.dataview):not(.calendar) > :is(thead, tbody) > tr > :is(th, td) {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/*
+ * 阅读模式与 Live Preview 的代码块统一使用等宽字体。
+ */
+.markdown-reading-view .markdown-rendered pre,
+.markdown-reading-view .markdown-rendered pre code,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock {
+  font-family: var(--font-monospace);
+  font-size: var(--note-code-text-size);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+}
+
+/*
+ * 语法高亮只负责颜色，不再把 annotation、参数名等代码斜体化。
+ */
+.markdown-reading-view .markdown-rendered pre code *,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock * {
+  font-style: normal !important;
+}

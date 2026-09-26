@@ -1,0 +1,38 @@
+/*
+ * Java annotation 使用独立的柔和紫色。
+ * 与正文色混合后保持和关键字、字符串相近的视觉亮度。
+ */
+body {
+  --note-java-annotation-color: color-mix(
+    in srgb,
+    var(--color-purple) 82%,
+    var(--text-normal)
+  );
+}
+
+/* 阅读模式：Prism Java 语法高亮。 */
+.markdown-reading-view
+  .markdown-rendered
+  code.language-java
+  .token.annotation,
+.markdown-reading-view
+  .markdown-rendered
+  code.language-java
+  .token.annotation
+  .token,
+.markdown-reading-view
+  .markdown-rendered
+  pre.language-java
+  .token.annotation,
+.markdown-reading-view
+  .markdown-rendered
+  pre.language-java
+  .token.annotation
+  .token {
+  color: var(--note-java-annotation-color) !important;
+}
+
+/* Live Preview：CodeMirror 将 Java annotation 标记为 cm-meta。 */
+.markdown-source-view.mod-cm6 .HyperMD-codeblock .cm-meta {
+  color: var(--note-java-annotation-color) !important;
+}

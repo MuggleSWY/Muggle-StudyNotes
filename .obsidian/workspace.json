@@ -1,0 +1,235 @@
+{
+  "main": {
+    "id": "86d071486a465f62",
+    "type": "split",
+    "children": [
+      {
+        "id": "0fe1b7a38438baf3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "83850ddc089237bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "98-技术问答/Prompt 提示词工程/2、Prompt 提示词的基本结构包括哪些部分？.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2、Prompt 提示词的基本结构包括哪些部分？"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "daeb35f2dcbedd23",
+    "type": "split",
+    "children": [
+      {
+        "id": "9326d1dba5687a96",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "abe0d24dc27f9b77",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "9370bb967de0bd89",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "1bfc37a67e87118b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 262.5
+  },
+  "right": {
+    "id": "124fb3b026ac9984",
+    "type": "split",
+    "children": [
+      {
+        "id": "11724de037dfcc6f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "54dcea7232475ea9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "98-知识点/AI Agent 智能体/1、什么是 AI Agent？它和直接调用大模型 API 有什么区别？.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "eba7379f9b6c7c93",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "98-知识点/AI Agent 智能体/1、什么是 AI Agent？它和直接调用大模型 API 有什么区别？.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "73982308eb1780b2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "9ac0098827dbb0ae",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "0fece3986f5570ed",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "08-Agent/Agent 学习计划.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "a6df633ae2177c21",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 359.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "abe0d24dc27f9b77",
+  "lastOpenFiles": [
+    "04-AI 基础/10-AI 评估、安全与实践",
+    "04-AI 基础/09-AI 应用开发基础",
+    "04-AI 基础/08-RAG 与外部能力扩展",
+    "04-AI 基础/07-大模型使用与提示工程",
+    "04-AI 基础/06-大模型训练与推理",
+    "04-AI 基础/05-Transformer 与大模型基础",
+    "04-AI 基础/04-神经网络与深度学习基础",
+    "04-AI 基础/03-机器学习基础",
+    "04-AI 基础/02-数据、模型与学习基础",
+    "04-AI 基础/01-AI 与人工智能基础",
+    "05-Agent/01-Agent 基础",
+    "98-技术问答/AI Agent 智能体/2、AI Agent 的核心组件有哪些？感知、决策、执行、记忆各自的作用是什么？.md",
+    "05-Agent/00-Agent 知识索引.md",
+    "00-inbox/1、Agent 基础索引.md",
+    "05-Agent/01-Agent 基础/1、Agent 基础索引.md",
+    "01-计算机基础/计算机网络/1、计算机网络体系结构.md",
+    "98-技术问答/Prompt 提示词工程/8、如何在提示词中设置约束条件和输出要求？.md",
+    "98-技术问答/Prompt 提示词工程/7、提示词中的分隔符有什么作用？如何使用？.md",
+    "98-技术问答/Prompt 提示词工程/6、什么是角色扮演 Role Playing？如何在提示词中使用？.md",
+    "98-技术问答/Prompt 提示词工程/5、如何让 AI 输出指定格式的内容，比如 JSON、表格、Markdown？.md",
+    "98-技术问答/Prompt 提示词工程/4、什么是上下文窗口 Context Window？它有什么限制？.md",
+    "98-技术问答/Prompt 提示词工程/3、Token 是什么？如何计算和控制 Token 数量？.md",
+    "98-技术问答/Prompt 提示词工程/2、Prompt 提示词的基本结构包括哪些部分？.md",
+    "98-技术问答/Prompt 提示词工程/1、什么是 Prompt Engineering 提示词工程？核心价值是什么？.md",
+    "98-技术问答/AI Agent 智能体/1、什么是 AI Agent？它和直接调用大模型 API 有什么区别？.md",
+    "98-知识点/AI Agent 智能体/1、什么是 AI Agent？它和直接调用大模型 API 有什么区别？.md",
+    "98-知识点/Prompt 提示词工程/1、什么是 Prompt Engineering 提示词工程？核心价值是什么？.md",
+    "98-知识点/AI Agent 智能体/2、AI Agent 的核心组件有哪些？感知、决策、执行、记忆各自的作用是什么？.md",
+    "08-Agent/Agent 学习计划.md",
+    "02-Java/01-Java 语言基础/01-认识 Java 与开发环境/01-Java 是什么？.md"
+  ]
+}

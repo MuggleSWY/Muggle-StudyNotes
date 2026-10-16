@@ -1,24 +1,20 @@
 {
   "main": {
-    "id": "86d071486a465f62",
+    "id": "164c59de6994e825",
     "type": "split",
     "children": [
       {
-        "id": "0fe1b7a38438baf3",
+        "id": "2c6ce9ebcec599d1",
         "type": "tabs",
         "children": [
           {
-            "id": "83850ddc089237bc",
+            "id": "62c626901d842ee2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "98-技术问答/Prompt 提示词工程/2、Prompt 提示词的基本结构包括哪些部分？.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2、Prompt 提示词的基本结构包括哪些部分？"
+              "title": "新标签页"
             }
           }
         ]
@@ -27,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "daeb35f2dcbedd23",
+    "id": "a9b2e62829fd9429",
     "type": "split",
     "children": [
       {
-        "id": "9326d1dba5687a96",
+        "id": "1b46e16bc05f3ec7",
         "type": "tabs",
         "children": [
           {
-            "id": "abe0d24dc27f9b77",
+            "id": "8645a3a1e36b84d6",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -50,7 +46,7 @@
             }
           },
           {
-            "id": "9370bb967de0bd89",
+            "id": "31afeecea4db16aa",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -67,14 +63,11 @@
             }
           },
           {
-            "id": "1bfc37a67e87118b",
+            "id": "a2f8837646797b2a",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {
-                "showSearch": false,
-                "searchQuery": ""
-              },
+              "state": {},
               "icon": "lucide-bookmark",
               "title": "书签"
             }
@@ -83,24 +76,38 @@
       }
     ],
     "direction": "horizontal",
-    "width": 262.5
+    "width": 270.8333435058594
   },
   "right": {
-    "id": "124fb3b026ac9984",
+    "id": "191911ebf690df72",
     "type": "split",
     "children": [
       {
-        "id": "11724de037dfcc6f",
+        "id": "eeb5155d627eb3f0",
         "type": "tabs",
         "children": [
           {
-            "id": "54dcea7232475ea9",
+            "id": "fbc8962ce0f85ece",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "c88e2c69d61da5f4",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "98-知识点/AI Agent 智能体/1、什么是 AI Agent？它和直接调用大模型 API 有什么区别？.md",
-                "collapseAll": false,
+                "file": "00-inbox/Swagger 常用注解使用文档.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -109,16 +116,15 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "Swagger 常用注解使用文档 的反向链接列表"
             }
           },
           {
-            "id": "eba7379f9b6c7c93",
+            "id": "d525272bc821fbb5",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "98-知识点/AI Agent 智能体/1、什么是 AI Agent？它和直接调用大模型 API 有什么区别？.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -127,7 +133,7 @@
             }
           },
           {
-            "id": "73982308eb1780b2",
+            "id": "77bb4c90443744d2",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -142,7 +148,7 @@
             }
           },
           {
-            "id": "9ac0098827dbb0ae",
+            "id": "e7fcff24764b0487",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -156,22 +162,7 @@
             }
           },
           {
-            "id": "0fece3986f5570ed",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "08-Agent/Agent 学习计划.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "大纲"
-            }
-          },
-          {
-            "id": "a6df633ae2177c21",
+            "id": "152d607162603d02",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -185,7 +176,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 359.5
+    "width": 405.833251953125
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -199,24 +190,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "abe0d24dc27f9b77",
+  "active": "152d607162603d02",
   "lastOpenFiles": [
-    "04-AI 基础/10-AI 评估、安全与实践",
-    "04-AI 基础/09-AI 应用开发基础",
-    "04-AI 基础/08-RAG 与外部能力扩展",
-    "04-AI 基础/07-大模型使用与提示工程",
-    "04-AI 基础/06-大模型训练与推理",
-    "04-AI 基础/05-Transformer 与大模型基础",
-    "04-AI 基础/04-神经网络与深度学习基础",
-    "04-AI 基础/03-机器学习基础",
-    "04-AI 基础/02-数据、模型与学习基础",
-    "04-AI 基础/01-AI 与人工智能基础",
-    "05-Agent/01-Agent 基础",
-    "98-技术问答/AI Agent 智能体/2、AI Agent 的核心组件有哪些？感知、决策、执行、记忆各自的作用是什么？.md",
-    "05-Agent/00-Agent 知识索引.md",
-    "00-inbox/1、Agent 基础索引.md",
-    "05-Agent/01-Agent 基础/1、Agent 基础索引.md",
-    "01-计算机基础/计算机网络/1、计算机网络体系结构.md",
+    "04-AI 基础/01-AI 与人工智能基础/01-人工智能是什么.md",
+    "04-AI 基础/01-AI 与人工智能基础/02-AI、普通软件与自动化.md",
+    "98-技术问答/AI Agent 智能体/1、什么是 AI Agent？它和直接调用大模型 API 有什么区别？.md",
+    "04-AI 基础/01-AI 与人工智能基础/09-从数据中学习与不同方法的结合.md",
+    "04-AI 基础/01-AI 与人工智能基础/08-搜索、规划、约束与决策.md",
+    "04-AI 基础/01-AI 与人工智能基础/07-知识表示、符号推理与专家系统.md",
+    "04-AI 基础/01-AI 与人工智能基础/06-专用能力、通用能力与AGI.md",
+    "04-AI 基础/01-AI 与人工智能基础/05-生成式AI、大模型、基础模型与大语言模型.md",
+    "04-AI 基础/01-AI 与人工智能基础/04-AI、机器学习、神经网络与深度学习.md",
+    "04-AI 基础/01-AI 与人工智能基础/03-人工智能的发展脉络.md",
+    "02-Java/01-Java 语言基础/01-认识 Java 与开发环境/01-Java 是什么？.md",
     "98-技术问答/Prompt 提示词工程/8、如何在提示词中设置约束条件和输出要求？.md",
     "98-技术问答/Prompt 提示词工程/7、提示词中的分隔符有什么作用？如何使用？.md",
     "98-技术问答/Prompt 提示词工程/6、什么是角色扮演 Role Playing？如何在提示词中使用？.md",
@@ -225,11 +211,34 @@
     "98-技术问答/Prompt 提示词工程/3、Token 是什么？如何计算和控制 Token 数量？.md",
     "98-技术问答/Prompt 提示词工程/2、Prompt 提示词的基本结构包括哪些部分？.md",
     "98-技术问答/Prompt 提示词工程/1、什么是 Prompt Engineering 提示词工程？核心价值是什么？.md",
-    "98-技术问答/AI Agent 智能体/1、什么是 AI Agent？它和直接调用大模型 API 有什么区别？.md",
-    "98-知识点/AI Agent 智能体/1、什么是 AI Agent？它和直接调用大模型 API 有什么区别？.md",
-    "98-知识点/Prompt 提示词工程/1、什么是 Prompt Engineering 提示词工程？核心价值是什么？.md",
-    "98-知识点/AI Agent 智能体/2、AI Agent 的核心组件有哪些？感知、决策、执行、记忆各自的作用是什么？.md",
+    "98-技术问答/Prompt 提示词工程",
+    "98-技术问答/AI Agent 智能体/2、AI Agent 的核心组件有哪些？感知、决策、执行、记忆各自的作用是什么？.md",
+    "98-技术问答/AI Agent 智能体",
+    "98-技术问答",
+    "05-Agent",
+    "04-AI 基础/10-AI 评估、安全与实践",
+    "04-AI 基础/09-AI 应用开发基础",
+    "04-AI 基础/08-RAG 与外部能力扩展",
+    "04-AI 基础/07-大模型使用与提示工程",
+    "04-AI 基础/06-大模型训练与推理",
+    "04-AI 基础/05-Transformer 与大模型基础",
+    "08-Agent/未命名.md",
     "08-Agent/Agent 学习计划.md",
-    "02-Java/01-Java 语言基础/01-认识 Java 与开发环境/01-Java 是什么？.md"
+    "98-知识点/AI Agent 智能体/1、什么是 AI Agent？它和直接调用大模型 API 有什么区别？.md",
+    "01-Work/Law 后端重构/1、LawBackend 框架.md",
+    "01-Work/每日清单/2026-09-16.md",
+    "01-Work/每日清单/2026-08-18.md",
+    "99-attachment/Pasted image 20260823144252.png",
+    "99-attachment/Pasted image 20260823123012.png",
+    "99-attachment/Pasted image 20260729110803.png",
+    "99-attachment/Pasted image 20260729140916.png",
+    "99-attachment/Pasted image 20260815163639.png",
+    "99-attachment/Pasted image 20260815174705.png",
+    "99-attachment/Pasted image 20260816113430.png",
+    "99-attachment/Pasted image 20260816115406.png",
+    "99-attachment/Pasted image 20260729140909.png",
+    "99-attachment/Pasted image 20260729110143.png",
+    "00-inbox/未命名.canvas",
+    "未命名.canvas"
   ]
 }

@@ -2,7 +2,7 @@
   "foldIndent": false,
   "showLineNumber": true,
   "readableLineLength": true,
-  "showInlineTitle": true,
+  "showInlineTitle": false,
   "promptDelete": true,
   "newFileLocation": "folder",
   "newFileFolderPath": "00-inbox",

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "98-技术问答/Prompt 提示词工程/1、什么是 Prompt Engineering 提示词工程？核心价值是什么？.md",
+                "file": "03-Python/01-Python 概览与开发环境/03-Windows中的Python安装与首次运行.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1、什么是 Prompt Engineering 提示词工程？核心价值是什么？"
+              "title": "03-Windows中的Python安装与首次运行"
             }
           }
         ]
@@ -96,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "98-技术问答/Prompt 提示词工程/1、什么是 Prompt Engineering 提示词工程？核心价值是什么？.md",
+                "file": "03-Python/01-Python 概览与开发环境/03-Windows中的Python安装与首次运行.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -197,25 +197,6 @@
   },
   "active": "152d607162603d02",
   "lastOpenFiles": [
-    "03-Python/01-Python 概览与开发环境/01-Python语言、解释器与库的入门概念.md",
-    "98-技术问答/Prompt 提示词工程/1、什么是 Prompt Engineering 提示词工程？核心价值是什么？.md",
-    "03-Python/16-应用开发与综合实践",
-    "03-Python/16-应用开发与综合时间",
-    "03-Python/新建文件夹",
-    "03-Python/15-网络通信与数据存储",
-    "03-Python/14-运行机制、内存与性能",
-    "03-Python/13-并发、并行与异步编程",
-    "03-Python/12-测试、调试与工程质量",
-    "03-Python/11-项目组织、环境与依赖管理",
-    "03-Python/10-类型标注与静态检查",
-    "03-Python/09-标准库与常用工具",
-    "98-技术问答/Prompt 提示词工程/2、Prompt 提示词的基本结构包括哪些部分？.md",
-    "98-技术问答/Prompt 提示词工程/4、什么是上下文窗口 Context Window？它有什么限制？.md",
-    "03-Python/01-Python语言、解释器与库的入门概念.md",
-    "98-技术问答/Prompt 提示词工程/3、Token 是什么？如何计算和控制 Token 数量？.md",
-    "04-AI 基础/01-AI 与人工智能基础/01-人工智能是什么.md",
-    "04-AI 基础/01-AI 与人工智能基础/02-AI、普通软件与自动化.md",
-    "98-技术问答/AI Agent 智能体/1、什么是 AI Agent？它和直接调用大模型 API 有什么区别？.md",
     "04-AI 基础/01-AI 与人工智能基础/09-从数据中学习与不同方法的结合.md",
     "04-AI 基础/01-AI 与人工智能基础/08-搜索、规划、约束与决策.md",
     "04-AI 基础/01-AI 与人工智能基础/07-知识表示、符号推理与专家系统.md",
@@ -223,6 +204,27 @@
     "04-AI 基础/01-AI 与人工智能基础/05-生成式AI、大模型、基础模型与大语言模型.md",
     "04-AI 基础/01-AI 与人工智能基础/04-AI、机器学习、神经网络与深度学习.md",
     "04-AI 基础/01-AI 与人工智能基础/03-人工智能的发展脉络.md",
+    "04-AI 基础/01-AI 与人工智能基础/02-AI、普通软件与自动化.md",
+    "04-AI 基础/01-AI 与人工智能基础/01-人工智能是什么.md",
+    "04-AI 基础/01-AI 与人工智能基础",
+    "04-AI 基础/新建文件夹",
+    "03-Python/01-Python 概览与开发环境/02-Python程序的运行与基本错误.md",
+    "03-Python/01-Python 概览与开发环境/03-Windows中的Python安装与首次运行.md",
+    "03-Python/01-Python 概览与开发环境/03-Windows中的Python安装与首次运行.md.crdownload",
+    "03-Python/01-Python 概览与开发环境/01-Python语言、解释器与库的入门概念.md",
+    "03-Python/01-Python 概览与开发环境/02-Python程序的运行与基本错误.md.crdownload",
+    "98-技术问答/Prompt 提示词工程/1、什么是 Prompt Engineering 提示词工程？核心价值是什么？.md",
+    "03-Python/16-应用开发与综合实践",
+    "03-Python/16-应用开发与综合时间",
+    "03-Python/新建文件夹",
+    "03-Python/15-网络通信与数据存储",
+    "03-Python/14-运行机制、内存与性能",
+    "03-Python/13-并发、并行与异步编程",
+    "98-技术问答/Prompt 提示词工程/2、Prompt 提示词的基本结构包括哪些部分？.md",
+    "98-技术问答/Prompt 提示词工程/4、什么是上下文窗口 Context Window？它有什么限制？.md",
+    "03-Python/01-Python语言、解释器与库的入门概念.md",
+    "98-技术问答/Prompt 提示词工程/3、Token 是什么？如何计算和控制 Token 数量？.md",
+    "98-技术问答/AI Agent 智能体/1、什么是 AI Agent？它和直接调用大模型 API 有什么区别？.md",
     "02-Java/01-Java 语言基础/01-认识 Java 与开发环境/01-Java 是什么？.md",
     "98-技术问答/Prompt 提示词工程/8、如何在提示词中设置约束条件和输出要求？.md",
     "98-技术问答/Prompt 提示词工程/7、提示词中的分隔符有什么作用？如何使用？.md",
@@ -230,8 +232,6 @@
     "98-技术问答/Prompt 提示词工程/5、如何让 AI 输出指定格式的内容，比如 JSON、表格、Markdown？.md",
     "98-技术问答/AI Agent 智能体/2、AI Agent 的核心组件有哪些？感知、决策、执行、记忆各自的作用是什么？.md",
     "08-Agent/未命名.md",
-    "08-Agent/Agent 学习计划.md",
-    "98-知识点/AI Agent 智能体/1、什么是 AI Agent？它和直接调用大模型 API 有什么区别？.md",
     "99-attachment/Pasted image 20260823144252.png",
     "99-attachment/Pasted image 20260823123012.png",
     "99-attachment/Pasted image 20260729110803.png",

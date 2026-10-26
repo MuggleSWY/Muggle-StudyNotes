@@ -5,7 +5,7 @@
   "baseFontSizeAction": true,
   "interfaceFontFamily": "Microsoft YaHei UI",
   "textFontFamily": "Noto Sans SC",
-  "monospaceFontFamily": "JetBrains Mono",
+  "monospaceFontFamily": "",
   "enabledCssSnippets": [
     "heading-content-gap",
     "note-reading-style",

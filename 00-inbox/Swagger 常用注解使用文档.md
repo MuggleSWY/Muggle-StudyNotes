@@ -1,4 +1,6 @@
-## 1、Swagger、OpenAPI、springdoc-openapi 的关系
+# Swagger 常用注解使用文档
+
+## 一、Swagger、OpenAPI、springdoc-openapi 的关系
 
 很多项目里大家习惯把接口文档叫做 Swagger，但现在更准确的说法是：
 - OpenAPI：接口文档规范
@@ -7,8 +9,9 @@
 - springdoc-openapi：Spring Boot 项目中常用的 OpenAPI 文档生成工具
 在 Spring Boot 项目中，一般通过 springdoc-openapi 扫描 Controller、DTO、VO、注解信息，自动生成接口文档
 
-## 2、推荐依赖配置
-### 2.1、Spring Boot 3.x 推荐依赖
+## 二、推荐依赖配置
+
+### 1. Spring Boot 3.x 推荐依赖
 
 ```xml
 <dependency>
@@ -18,7 +21,7 @@
 </dependency>
 ```
 
-### 2.2、常用访问地址
+### 2. 常用访问地址
 
 启动项目后，一般可以访问：
 ```bash
@@ -29,12 +32,12 @@ http://localhost:8080/v3/api-docs
 - `/swagger-ui.html`：Swagger UI 页面
 - `/v3/api-docs`：OpenAPI JSON 文档
 
-### 2.3、Spring Boot 2.x 项目说明
+### 3. Spring Boot 2.x 项目说明
 
 如果项目还是 Spring Boot 2.x ，一般不要直接使用 springdoc-openapi 2.x
 Spring Boot 2.x 更适合使用 springdoc-openai 1.8.0 这一类版本
 
-## 3、常用注解导包
+## 三、常用注解导包
 
 新版 OpenAPI 注解一般来自下面这些包：
 ```Java
@@ -62,7 +65,7 @@ io.swagger.annotations
 ```
 新项目建议优先使用新版 `io.swagger.v3.oas.annotations`
 
-## 4、常用注解快速总结
+## 四、常用注解快速总结
 
 |           注解           |       作用        |               常用位置               |
 | :--------------------: | :-------------: | :------------------------------: |
@@ -80,12 +83,13 @@ io.swagger.annotations
 | `@SecurityRequirement` |    声明接口需要认证     |         Controller 类或方法          |
 > **💡 一句话记忆：** `@Tag` 管 `Controller`，`@Operation` 管接口，`@Parameter` 管参数，`@Schema` 管 `DTO/VO` 字段，`@ApiResponse` 管响应说明。
 
-## 5、@Tag：Controller 分组说明
-### 5.1、作用
+## 五、@Tag：Controller 分组说明
+
+### 1. 作用
 
 `@Tag` 用于给 Controller 分组，Swagger UI 页面会按照 `@Tag` 的 name 进行接口分类展示
 
-### 5.2、示例
+### 2. 示例
 
 ```Java
 @Tag(name = "设备管理",description = "设备新增、修改、查询、删除相关接口")
@@ -96,12 +100,13 @@ public class DeviceController{
 }
 ```
 
-## 6、@Operation：接口方法说明
-### 6.1、作用
+## 六、@Operation：接口方法说明
+
+### 1. 作用
 
 `@Operation` 用于描述某一个接口方法
 
-### 6.2、示例
+### 2. 示例
 
 ```Java
 @Operation(summary = "查询设备详情",description = "根据设备ID查询设备的基础信息，房间信息和在线状态")
@@ -111,7 +116,7 @@ public DeviceVO getDeviceDetail(@PathVariable Long id){
 }
 ```
 
-### 6.3、常用属性
+### 3. 常用属性
 
 ```Java
 @Operation(
@@ -122,8 +127,9 @@ public DeviceVO getDeviceDetail(@PathVariable Long id){
 )
 ```
 
-## 7、@Parameter：请求参数说明
-### 7.1、作用
+## 七、@Parameter：请求参数说明
+
+### 1. 作用
 
 `@Parameter` 用于描述请求参数，例如：
 - `@PathVariable`
@@ -131,7 +137,7 @@ public DeviceVO getDeviceDetail(@PathVariable Long id){
 - Header 参数
 - Cookie 参数
 
-### 7.2、@PathVariable 示例
+### 2. @PathVariable 示例
 
 ```Java
 @GetMapping("/{id}")
@@ -143,7 +149,7 @@ public DeviceVO detail(
 }
 ```
 
-### 7.3、@RequestParam 示例
+### 3. @RequestParam 示例
 
 ```Java
 @Operation(summary = "分页查询设备列表")
@@ -165,7 +171,7 @@ public PageResult<DeviceVO> pageDevices(
 }
 ```
 
-### 7.4、常用属性
+### 4. 常用属性
 
 ```Java
 @Parameter(
@@ -176,13 +182,14 @@ public PageResult<DeviceVO> pageDevices(
 )
 ```
 
-### 7.5、使用建议
+### 5. 使用建议
 
 >如果是简单的 DTO 请求体，字段说明优先卸载 DTO 的 `@Schema` 上。
 >如果是路径参数、查询参数，建议用 `@Parameter` 标明含义
 
-## 8、@Schema：DTO / VO / 字段说明
-### 8.1、作用
+## 八、@Schema：DTO / VO / 字段说明
+
+### 1. 作用
 
 `@Schema` 是最常用的实体说明注解。它可以用在：
 - DTO 类
@@ -192,7 +199,7 @@ public PageResult<DeviceVO> pageDevices(
 - 请求参数
 - 响应参数
 
-### 8.2、DTO 示例
+### 2. DTO 示例
 
 ```Java
 @Schema(description = "设备新增请求")
@@ -213,7 +220,7 @@ public class DeviceCreateRequest {
 }
 ```
 
-### 8.3、VO 示例
+### 3. VO 示例
 
 ```Java
 @Schema(description = "设备详情响应")
@@ -234,7 +241,7 @@ public class DeviceVO {
 }
 ```
 
-### 8.4、常用属性
+### 4. 常用属性
 
 ```Java
 @Schema(description = "字段说明")
@@ -244,7 +251,7 @@ public class DeviceVO {
 @Schema(requiredMode = Schema.RequiredMode.REQUIRED)
 ```
 
-### 8.5、必填字段推荐写法
+### 5. 必填字段推荐写法
 
 不太建议使用老写法：
 ```Java
@@ -264,8 +271,9 @@ private String deviceName;
 - `@Schema` ：主要影响接口文档
 - `@NotBlank`、`@NotNull`：主要影响后端参数校验
 
-## 9、@RequestBody：请求体说明
-### 9.1、注意点
+## 九、@RequestBody：请求体说明
+
+### 1. 注意点
 
 这里有两个 `@RequestBody`，很容易混淆
 Spring 请求体注解：
@@ -277,7 +285,7 @@ Swagger/OpenAPI 的请求体说明注解：
 io.swagger.v3.oas.annotations.parameters.RequestBody
 ```
 
-### 9.2、简洁推荐写法
+### 2. 简洁推荐写法
 
 普通项目里，推荐请求体字段说明直接写在 DTO 上：
 ```Java
@@ -298,7 +306,7 @@ public class DeviceCreateRequest {
 }
 ```
 
-### 9.3、完整写法
+### 3. 完整写法
 
 如果需要对请求体写更详细说明，可以这样写：
 ```Java
@@ -315,13 +323,14 @@ public Boolean createDevice(
 }
 ```
 
-### 9.4、使用建议
+### 4. 使用建议
 
 普通 CRUD 接口没必要写得特别复杂
 优先把说明写在 DTO 字段的 `@Schema` 上，接口方法保持简洁
 
-## 10、@ApiResponse/@ApiResponse：响应说明
-### 10.1、作用
+## 十、@ApiResponse/@ApiResponse：响应说明
+
+### 1. 作用
 
 用于描述接口可能返回的响应结果，例如：
 - `200`：成功
@@ -331,7 +340,7 @@ public Boolean createDevice(
 - `404`：资源不存在
 - `500` 服务器内部异常
 
-### 10.2、简单示例
+### 2. 简单示例
 
 ```Java
 @Operation(summary = "查询设备详情")
@@ -347,7 +356,7 @@ public DeviceVO getDeviceDetail(@PathVariable Long id) {
 }
 ```
 
-### 10.3、指定响应体类型
+### 3. 指定响应体类型
 
 ```Java
 @Operation(summary = "查询设备详情")
@@ -365,7 +374,7 @@ public DeviceVO getDeviceDetail(@PathVariable Long id) {
 }
 ```
 
-### 10.4、使用建议
+### 4. 使用建议
 
 如果项目有统一返回结构，例如：
 ```Java
@@ -374,14 +383,15 @@ Result<DeviceVO>
 很多情况下框架可以自动推断返回结构
 只有当文档展示不准确，泛型展示混乱，接口非常重要时，再手动补 `@ApiResponse`
 
-## 11、@Content：请求体/响应体内容类型
-### 11.1、作用
+## 十一、@Content：请求体/响应体内容类型
+
+### 1. 作用
 
 `@Content` 一般不会单独使用，通常配合：
 - `@ApiResponse`
 - Swagger 的 `@RequestBody`
 
-### 11.2、示例
+### 2. 示例
 
 ```Java
 @ApiResponse(
@@ -394,7 +404,7 @@ Result<DeviceVO>
 )
 ```
 
-### 11.3、常用 mediaType
+### 3. 常用 mediaType
 
 ```Java
 application/json
@@ -403,12 +413,13 @@ application/octet-stream
 text/plain
 ```
 
-## 12、@ArraySchema：数组或List类型说明
-### 12.1、作用
+## 十二、@ArraySchema：数组或List类型说明
+
+### 1. 作用
 
 用于描述数组或集合返回值
 
-### 12.2、示例
+### 2. 示例
 
 ```Java
 @Operation(summary = "查询设备列表")
@@ -426,7 +437,7 @@ public List<DeviceVO> listDevices() {
 }
 ```
 
-### 12.3、使用建议
+### 3. 使用建议
 
 如果方法返回值已经明确是：
 ```Java
@@ -434,12 +445,13 @@ List<DeviceVO>
 ```
 一般可以不用额外写 `@ArraySchema`，只有自动识别不准确时再补
 
-## 13、@ExampleObject：请求或响应示例
-### 13.1、作用
+## 十三、@ExampleObject：请求或响应示例
+
+### 1. 作用
 
 用于给接口文档添加 JSON 示例，方便前端、测试人员理解请求格式
 
-### 13.2、示例
+### 2. 示例
 
 ```Java
 @Operation(summary = "新增设备")
@@ -468,7 +480,7 @@ public Boolean createDevice(@RequestBody DeviceCreateRequest request) {
 }
 ```
 
-### 13.3、使用建议
+### 3. 使用建议
 
 这些接口比较适合加示例：
 - 新增接口
@@ -479,8 +491,9 @@ public Boolean createDevice(@RequestBody DeviceCreateRequest request) {
 - 回调接口
 - 第三方对接接口
 
-## 14、@Hidden：隐藏接口或字段
-### 14.1、隐藏接口
+## 十四、@Hidden：隐藏接口或字段
+
+### 1. 隐藏接口
 
 ```Java
 @Hidden
@@ -490,14 +503,14 @@ public String internalTest(){
 }
 ```
 
-### 14.2、隐藏字段
+### 2. 隐藏字段
 
 ```Java
 @Schema(hidden = true)
 private String internalToken;
 ```
 
-### 14.3、使用建议
+### 3. 使用建议
 
 适合隐藏：
 - 内部调试接口
@@ -506,12 +519,13 @@ private String internalToken;
 - 敏感字段
 - 内部流转字段
 
-## 15、@SecurityScheme/@SecurityRequirement：认证配置
-### 15.1、作用
+## 十五、@SecurityScheme/@SecurityRequirement：认证配置
+
+### 1. 作用
 
 如果项目使用 Token、JWT、Bearer Token 等认证方式，可以在 Swagger UI 中配置认证信息
 
-### 15.2、Bearer Token 配置示例
+### 2. Bearer Token 配置示例
 
 ```Java
 @Configuration
@@ -532,7 +546,7 @@ import io.swagger.v3.oas.annotations.enums.SecuritySchemeType;
 import org.springframework.context.annotation.Configuration;
 ```
 
-### 15.3、Controller 上使用
+### 3. Controller 上使用
 
 ```Java
 @SecurityRequirement(name = "BearerAuth")
@@ -544,7 +558,7 @@ public class DeviceController {
 }
 ```
 
-### 15.4、方法上使用
+### 4. 方法上使用
 
 ```Java
 @Operation(summary = "删除设备")
@@ -555,12 +569,12 @@ public Boolean deleteDevice(@PathVariable Long id) {
 }
 ```
 
-### 15.5、使用建议
+### 5. 使用建议
 
 如果大部分接口都需要登录，可以把 `@SecurityRequirement` 放在 Controller 类上。
 如果只有少部分接口需要认证，可以放在具体接口方法上。
 
-## 16、完整 Controller 示例
+## 十六、完整 Controller 示例
 
 ```Java
 package com.example.robot.controller;
@@ -628,7 +642,7 @@ public class DeviceController {
 }
 ```
 
-## 17、完整 DTO 示例
+## 十七、完整 DTO 示例
 
 ```Java
 package com.example.robot.model.request;
@@ -659,7 +673,7 @@ public class DeviceCreateRequest {
 }
 ```
 
-## 18、完整 VO 示例
+## 十八、完整 VO 示例
 
 ```Java
 package com.example.robot.model.vo;
@@ -688,7 +702,7 @@ public class DeviceVO {
 }
 ```
 
-## 19、老版 Swagger 注解和新 OpenAPI 注解对照
+## 十九、老版 Swagger 注解和新 OpenAPI 注解对照
 
 |    老 Swagger 注解     |              新 OpenAPI 注解               |      说明       |
 | :-----------------: | :-------------------------------------: | :-----------: |

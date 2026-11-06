@@ -11,14 +11,10 @@
             "id": "62c626901d842ee2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04-AI 基础/01-AI 与人工智能基础/04-AI、机器学习、神经网络与深度学习.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "04-AI、机器学习、神经网络与深度学习"
+              "title": "新标签页"
             }
           }
         ]
@@ -196,8 +192,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "152d607162603d02",
+  "active": "8645a3a1e36b84d6",
   "lastOpenFiles": [
+    "03-Python/01-Python 概览与开发环境/01-Python语言、解释器与库的入门概念.md",
+    "04-AI 基础/01-AI 与人工智能基础/04-AI、机器学习、神经网络与深度学习.md",
     "04-AI 基础/01-AI 与人工智能基础/03-人工智能的发展脉络.md",
     "04-AI 基础/01-AI 与人工智能基础/01-人工智能是什么.md",
     "04-AI 基础/01-AI 与人工智能基础/02-AI、普通软件与自动化.md",
@@ -214,7 +212,6 @@
     "04-AI 基础/01-AI 与人工智能基础/07-知识表示、符号推理与专家系统.md",
     "04-AI 基础/01-AI 与人工智能基础/06-专用能力、通用能力与AGI.md",
     "04-AI 基础/01-AI 与人工智能基础/05-生成式AI、大模型、基础模型与大语言模型.md",
-    "04-AI 基础/01-AI 与人工智能基础/04-AI、机器学习、神经网络与深度学习.md",
     "03-Python/01-Python 概览与开发环境/05-venv虚拟环境的创建与使用.md",
     "03-Python/01-Python 概览与开发环境/06-pip基础包管理与依赖检查.md",
     "03-Python/01-Python 概览与开发环境/04-VS Code工作区、文件运行与代码检查.md",
@@ -226,7 +223,6 @@
     "04-AI 基础/新建文件夹",
     "03-Python/01-Python 概览与开发环境/02-Python程序的运行与基本错误.md",
     "03-Python/01-Python 概览与开发环境/03-Windows中的Python安装与首次运行.md.crdownload",
-    "03-Python/01-Python 概览与开发环境/01-Python语言、解释器与库的入门概念.md",
     "03-Python/01-Python 概览与开发环境/02-Python程序的运行与基本错误.md.crdownload",
     "03-Python/16-应用开发与综合实践",
     "03-Python/16-应用开发与综合时间",

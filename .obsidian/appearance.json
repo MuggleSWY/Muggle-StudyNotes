@@ -12,5 +12,6 @@
     "java-annotation-highlight"
   ],
   "baseFontSize": 18,
-  "nativeMenus": false
+  "nativeMenus": false,
+  "showRibbon": true
 }

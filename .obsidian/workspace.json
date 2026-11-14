@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "98-技术问答/02-Prompt 提示词工程/01、什么是 Prompt Engineering 提示词工程？核心价值是什么？.md",
+                "file": "04-AI 基础/01-AI 与人工智能基础/01-人工智能是什么.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01、什么是 Prompt Engineering 提示词工程？核心价值是什么？"
+              "title": "01-人工智能是什么"
             }
           }
         ]
@@ -80,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 397.5
+    "width": 200
   },
   "right": {
     "id": "191911ebf690df72",
@@ -166,23 +166,14 @@
               "icon": "lucide-archive",
               "title": "添加笔记属性"
             }
-          },
-          {
-            "id": "152d607162603d02",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 324.5
+    "width": 324.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,8 +187,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8645a3a1e36b84d6",
+  "active": "62c626901d842ee2",
   "lastOpenFiles": [
+    "00-inbox/Swagger 常用注解使用文档.md",
+    "98-技术问答/02-Prompt 提示词工程/01、什么是 Prompt Engineering 提示词工程？核心价值是什么？.md",
     "07-Prompt Engineering",
     "98-技术问答/02-Prompt 提示词工程/02、Prompt 提示词的基本结构包括哪些部分？.md",
     "98-技术问答/02-Prompt 提示词工程/08、如何在提示词中设置约束条件和输出要求？.md",
@@ -224,7 +217,6 @@
     "03-Python/01-Python 概览与开发环境/05-venv虚拟环境的创建与使用.md",
     "03-Python/01-Python 概览与开发环境/06-pip基础包管理与依赖检查.md",
     "03-Python/01-Python 概览与开发环境/04-VS Code工作区、文件运行与代码检查.md",
-    "98-技术问答/01-AI Agent 智能体/02、AI Agent 的核心组件有哪些？感知、决策、执行、记忆各自的作用是什么？.md",
     "04-AI 基础/01-AI 与人工智能基础",
     "04-AI 基础/新建文件夹",
     "03-Python/01-Python 概览与开发环境/03-Windows中的Python安装与首次运行.md.crdownload",
@@ -233,7 +225,6 @@
     "03-Python/16-应用开发与综合时间",
     "03-Python/新建文件夹",
     "03-Python/15-网络通信与数据存储",
-    "03-Python/14-运行机制、内存与性能",
     "99-attachment/Pasted image 20260823144252.png",
     "99-attachment/Pasted image 20260823123012.png",
     "99-attachment/Pasted image 20260729110803.png",
